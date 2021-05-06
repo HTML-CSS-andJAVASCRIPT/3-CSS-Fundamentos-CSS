@@ -71,5 +71,32 @@ Se pueden normalizar los estilos.
 Descargamos el archivo y lo guardamos en la carpeta `css` y lo tenemos que cargar antes del archivo `styles.css` en el `index.html`
 https://necolas.github.io/normalize.css/
 
+# 5 Prefijos propietarios
 
+https://autoprefixer.github.io/
 
+Se puede instalar el programa `prepros`. Nos genera un archivo `styles-dist.css` que contiene todos los prefijos para que la página funcione en cualquier explorador, por eso cargamos el archivo `styles-dist.css` en nuestro `index.html`. 
+
+# 6 Box Model
+![img](001.png)
+### Width y height
+~~~html
+<div class="block">Elemento de bloque</div>
+<a href="#" class="inline">Elemento de linea</a>
+~~~
+~~~css
+.block{
+    background-color: purple;
+    width: 100px;
+    height: 100px;
+}
+~~~
+Con los elementos en linea no tienen ni alto ni ancho, por mucho que lo pongamos. El tamaño lo determina su contenido.
+~~~css
+.inline{
+    background-color:lightcoral;
+    color:inherit;
+    width: 200px;
+    height: 200px;
+}
+~~~
