@@ -1,3 +1,4 @@
+
 /*
 h1{
     background-color: red;
@@ -15,7 +16,28 @@ h1#title{
 h1.title#title{
     background-color:salmon;
 }
-*/
+
 .title{
     background-color: blue;
+}
+.title{
+    background-color: red;
+}
+*/
+.title{
+    color:cyan;
+    font-size: 10px;
+
+}
+.text{
+    color:green;
+}
+.link{
+    color:inherit;
+}
+.list{
+    color: salmon;
+}
+.list-item-extra{
+    color:initial
 }
