@@ -126,11 +126,29 @@ title2{
 ~~~
 
 #### Errores con margin
-No es buena práctica usar el `*`.
+No es buena práctica usar el `*`, porque resetea todos lo valores iniciales.
 ~~~css
 *{
     margin: 0;
     padding: 0;
     
 }
+~~~
+### Padding 
+Es la propiedad que nos permite generar espacio interno entre el borde y la caja.
+Es un shorthand (propiedad abreviada) que controloa:
+ - Los 4 lados posibles a los que dar padding.
+   - padding-top: padding superior
+   - padding-right: padding derecho
+   - padding-bottom: padding inferior
+   - padding-left: padding izquierdo.
+Admite hasta 4 valores que van el el orden de las agujas del reloj.
+ - 4 valores -> padding: top right bottom left
+ - 3 valores -> padding : top leff/right bottom.
+ - 2 valores -> padding: top/bottom lefg/right.
+ - 1 valor -> padding: top/right/bottom/leff
+
+~~~css
+  padding-right: 150px;
+  padding-left:150px
 ~~~
