@@ -152,3 +152,53 @@ Admite hasta 4 valores que van el el orden de las agujas del reloj.
   padding-right: 150px;
   padding-left:150px
 ~~~
+### Border
+Es la propiedad que nos permite modificar el borde de la caja.
+Es un shorthand que agrupa 3 propiedades:
+ - border-width: ancho del borde
+   - border-top-width
+   - border-right-width
+   - border-bottom-width
+   - border-left-width
+ - border-style: estilo del borde.
+   - border-top-style
+   - border-right-style
+   - border-bottom-style
+   - border-left-style
+
+   Listado de valores para sytle:
+     - none
+     - hidden
+     - dotted 
+     - dashed
+     - solid
+     - double
+     - groove
+     - ridge
+     - inset
+     - outset
+ - border-color: color del borde.
+   - border-top-color
+   - border-right-color
+   - border-bottom-color
+   - border-left-color
+
+~~~css
+border: 10px solid red;
+ border-right-color: blue;
+~~~
+### Box sizing
+Es La propiedad que nos permite controlar el cálculo que hace el navegador a la hora de modificar las propiedades `content`, `padding` y `border`.
+Los dos valores que podemos darle son:
+ - content-box -> Valor por defecto
+ - border-box -> Cálculo de tamao del elemento incluyendo el padding y el border
+~~~css
+box-sizing: border-box;
+border: 5px solid red;
+~~~
+Como no es lógico poner en cada elemento `box-sizing: border-box;`, en este caso se puede usar el selector universal.
+~~~css
+*{
+  box-sizing: border-box; 
+}
+~~~
