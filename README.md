@@ -100,3 +100,37 @@ Con los elementos en linea no tienen ni alto ni ancho, por mucho que lo pongamos
     height: 200px;
 }
 ~~~
+### Margin
+Es la propiedad que nos permite generar espacio entre elementos.
+Es un shorthand (propiedad abreviada) que controloa:
+ - Los 4 lados posibles a los que dar márgenes.
+   - margin-top: Márgen superior
+   - margin-right: Márgen derecho
+   - margin-bottom: Márgen inferior
+   - margin-left: Márgen izquierdo.
+
+Admite hasta 4 valores que van el el orden de las agujas del reloj.
+ - 4 valores -> margin: top right bottom left
+ - 3 valores -> margin : top leff/right bottom.
+ - 2 valores -> margin: top/bottom lefg/right.
+ - 1 valor -> margin: top/right/bottom/leff
+
+Los elementos en línea solo tienen márgenes horizontales. 
+~~~css
+title2{
+    background-color: darkblue;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+~~~
+
+#### Errores con margin
+No es buena práctica usar el `*`.
+~~~css
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+~~~
