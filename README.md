@@ -202,3 +202,24 @@ Como no es lógico poner en cada elemento `box-sizing: border-box;`, en este cas
   box-sizing: border-box; 
 }
 ~~~
+### Border radius
+Es la propiedad que nos permite redondear vertices de forma independient.
+Es un shorthand que engloba 4 propiedades:
+ - border-top-left-radis: -> Radio del borde superior izquierdo
+ - border-top-right-radius: -> Radio del borde superior derecho
+ - border-bottom-right-radius:-> Radio del borde inferior derecho
+ - border-bottom-left-radius:-> Radio del borde inferior izquierdo
+
+Si sólor recibe un valor dibujará un círculo en cada vértice del raiod que especifiquemos
+ - border-radius: 50 px; -> Círuclo con 50 px de radio
+
+Si utilizamos `border-radius` hay diferencias entre si queremos dar un calor a cada lado (círculo) o dos (elipse).
+
+### Elipses
+dos valores
+
+border-radius: 10px / 50px;
+ - border-top-left-radius: 10px 50px;
+ - border-top-right-radius: 10px 50px;
+ - border-bottom-right-radius: 10px 50px;
+ - border-bottom-left-radius: 10px 50px;

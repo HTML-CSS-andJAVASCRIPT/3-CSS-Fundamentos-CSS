@@ -88,3 +88,25 @@ body{
     padding: 0;
     
 } */
+.box{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    background-color: lightcyan;
+    width: 300px;
+    height: 300px;
+    /* border-radius: 50px; */
+    /* border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 100px;
+    border-top-left-radius: 150px;
+    border-top-right-radius: 200px; */
+
+/* Dos valores elipse */
+
+    border-radius: 50px / 100px;
+    /* border-top-left-radius: 10px 50px;
+    border-top-right-radius: 10px 50px;
+    border-bottom-right-radius: 10px 50px;
+    border-bottom-left-radius: 10px 50px; */
+
+}
