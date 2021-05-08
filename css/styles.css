@@ -95,6 +95,8 @@ body{
     background-color: lightcyan;
     width: 300px;
     height: 300px;
+
+    border-radius: 50px;
     /* border-radius: 50px; */
     /* border-bottom-left-radius: 50px;
     border-bottom-right-radius: 100px;
@@ -103,10 +105,29 @@ body{
 
 /* Dos valores elipse */
 
-    border-radius: 50px / 100px;
+    /* border-radius: 50px / 100px; */
     /* border-top-left-radius: 10px 50px;
     border-top-right-radius: 10px 50px;
     border-bottom-right-radius: 10px 50px;
     border-bottom-left-radius: 10px 50px; */
+    color:#333;
+    overflow:hidden;
+}
+.box-1, .box-2{
+    padding: 15px;
+    background-color: lightcoral;
+}
 
+/* .box-2{
+    background-color: lightcoral;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    width: 300px;
+    height: 300px;
+    overflow-y: scroll;
+} */
+.text{
+    margin: 0px;
+    /* width: 350px; */
 }

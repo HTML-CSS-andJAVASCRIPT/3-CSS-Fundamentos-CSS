@@ -223,3 +223,15 @@ border-radius: 10px / 50px;
  - border-top-right-radius: 10px 50px;
  - border-bottom-right-radius: 10px 50px;
  - border-bottom-left-radius: 10px 50px;
+
+
+ # 5 Overflow
+Es una propiedad que controla como se va a comportar la caja con el contenido que se desborde de ella.
+
+Es un shorthand que engloba overflow-x y overflow-y.
+
+Tiene 4 valores posibles:
+ - visible: -> Es el valor por defecto
+- hidden: Oculta todo el contenido que se desborde
+ - auto: Muestra la barra de scroll solo si hace falta
+ - scroll: Muestra ambas barras de scroll independientemente de si se necesitan
