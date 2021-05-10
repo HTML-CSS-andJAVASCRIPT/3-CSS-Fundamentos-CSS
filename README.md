@@ -235,3 +235,40 @@ Tiene 4 valores posibles:
 - hidden: Oculta todo el contenido que se desborde
  - auto: Muestra la barra de scroll solo si hace falta
  - scroll: Muestra ambas barras de scroll independientemente de si se necesitan
+
+ # 6. Colapsado de márgenes
+ ### Márgenes verticales
+ Los márgenes verticales colapsan y solapan.
+ No tiene solución.
+Pero se puede solucionar más o menos poniendo un ` margin-bottom:` al primer contenedor e ir bajando
+ ~~~css
+.box-a,
+.box-b{
+    margin-left: auto;
+    margin-right: auto;
+    
+    background-color: lightcyan;
+    width: 300px;
+    height: 300px;
+}
+.box-a{
+    margin-bottom: 30px;
+}
+ ~~~
+### Colapsado de márgenes entre padres e hijos
+Usando `overflow: hidden;` o ` padding-top: 0.1px;` o ` border-top: 0.1px solid lightcoral;`
+Se puede solucionar.
+ ~~~css
+ .header{
+    background-color: lightcoral;
+    height: 100px;
+    margin-bottom: 20px;
+    /* overflow: hidden; */
+    /* padding-top: 0.1px; */
+    border-top: 0.1px solid lightcoral;
+}
+.title-h1{
+    margin:0;
+    margin-top: 50px;
+}
+ ~~~
