@@ -272,3 +272,49 @@ Se puede solucionar.
     margin-top: 50px;
 }
  ~~~
+
+# 7. Display
+-Nos permite definir cómo se comporta una caja.
+-De forma natural existen elementos en línea y elementos en bloque
+-Los valores de esta propiedad son:
+    inline – Establece que la caja se comporta como si fuera un elemento en línea.
+        No admite dimensiones (width y height)
+        Admiten margin y padding pero no afecta al flujo vertical,sólo al horizontal
+    block - Establece que la caja se comporta como si fuera un elemento en bloque.
+        Admite dimensiones (width y height)
+        Admiten margin y padding y afecta al flujo vertical, sólo al horizontal.
+    inline-block - Se comporta como un elemento en línea pero acepta width y heigth
+    
+    none – Oculta el elemento pero se sigue renderizando
+    table – Imita el comportamiento de una tabla
+    ~~~css
+    .inline{
+    background: lime;
+    display: inline; 
+}
+    ~~~
+# 8. Outline
+Es ls propiedad que nos permite dibujar un borde por fuera del modelo de caja.
+No ocupa sitio ya que no forma parte del box-model.
+No se puede redondear.
+No se pueden controlar los lados de forma independiente
+~~~html
+<div class="border">Border</div>
+   <div class="outline">Outline</div>
+~~~
+~~~css
+.border,.outline{
+    background-color: #666;
+    width: 100px;
+    padding: 10px 25px;
+    margin: 50px 100px;
+
+}
+.border{
+    border: 2px solid lightcoral;
+}
+.outline{
+   outline: 20px solid lightcoral;
+   border: 5px solid lightgreen;
+}
+~~~
