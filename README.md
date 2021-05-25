@@ -295,9 +295,13 @@ Se puede solucionar.
     ~~~
 # 8. Outline
 Es ls propiedad que nos permite dibujar un borde por fuera del modelo de caja.
+
 No ocupa sitio ya que no forma parte del box-model.
+
 No se puede redondear.
+
 No se pueden controlar los lados de forma independiente
+
 ~~~html
 <div class="border">Border</div>
    <div class="outline">Outline</div>
@@ -317,4 +321,54 @@ No se pueden controlar los lados de forma independiente
    outline: 20px solid lightcoral;
    border: 5px solid lightgreen;
 }
+~~~
+
+# 9. Text-aling
+Es la propiedad que nos permite alinear horizontalmente el contenido de un elemento de bloque siempre que el contenido NO TENGA ANCHO DECLARADO
+~~~html
+<div class="box">Border</div>
+~~~
+~~~css
+.box{
+    background-color: #666;
+    width: 100px;
+    padding: 10px 0;
+    margin: 20px 0;
+    border: 2px solid lightgreen;
+    text-align: center;
+}
+~~~
+
+# 10. Box shadow
+
+Es una propiedad que crea una una sombra del tamaño de la caja
+
+ - box-shdow: h-offset v-offset blur spread color inset|outset
+
+ - h-offset: Es el desplazamiento horizontal de la sombra
+
+ - v-offset: Es el desplazamiento vertical de la sombra
+
+ - blur: Optional Es la cantidad de desenfoque de la sombra
+
+ - spread: Optional Es la extensión de la sombra
+color: Optional color de la sombra, si no se especifica tomará el color del texto
+
+ - inset|outset: Optional Determina si la sombra se dibuja por dentro o por fuera de la caja
+
+Con valor outset(default) los valores positivos añaden a derecha y abajo y los valores negativos añaden a iquierda y arriba
+Con valor inset se invierten los valores, positivo sería izquierda y arriba y negativo sería derecha y abajo
+
+ - box-shadow: 10px 10px 2px 5px red;
+Sombras múltiples.
+
+Se añaden las sombras separadas por comas
+box-shadow: 10px 10px 2px 5px red, -10px -10px 2px 5px blue;
+
+ - text-shadow: h-offset v-offset blur color
+Sombras múltiples.
+
+ - Se añaden las sombras separadas por comas text-shadow: 10px 10px 2px red, -11px -11px 2px blue;
+~~~css
+ box-shadow:5px 5px 10px greenyellow;
 ~~~
