@@ -1,5 +1,21 @@
 # 2 Fundamentos CSS
 # ¿Cómo funciona CSS? 
+1. [ Especificidad ](#schema1)
+2. [Cascada](#schema2)
+3. [Herencia](#schema3)
+4. [Estilos computados](#schema4)
+5. [Prefijos propietarios](#schema5)
+6. [Box Model](#schema6)
+7. [Overflow](#schema7)
+8. [Colapsado de márgenes](#schema8)
+9. [Display](#schema9)
+10. [Outline](#schema10)
+11. [Text-aling](#schema11)
+12. [Box shadow](#schema12)
+
+<hr>
+
+<a name="schema1"></a>
 
 # 1. Especificidad 
 Establece como de específico es un selectore para saber que estilo aplicar.
@@ -24,7 +40,11 @@ Con esta página podemos ver la calidad del CSS
 
 https://jonassebastianohlsson.com/specificity-graph/
 
-# 2 Cascada
+<hr>
+
+<a name="schema2"></a>
+
+# 2. Cascada
 Funciona siempre que la especificidad sobre el elemento sea la misma.
 ~~~css
 .title{
@@ -34,7 +54,12 @@ Funciona siempre que la especificidad sobre el elemento sea la misma.
     background-color: red;
 }
 ~~~
-# 3 Herencia
+
+<hr>
+
+<a name="schema3"></a>
+
+# 3. Herencia
 Es la capacidad que tienen algunos elementos de heredar algunas propiedades de sus elementos contenedores (padres, abuelos, etc)
 ~~~html
  <a href="#">Enlace de ejemplo</a>
@@ -63,7 +88,11 @@ Para que un elemento no herede tenemos la palabra `initial` que pone el elemento
 }
 ~~~
 
-# 4 Estilos computados
+<hr>
+
+<a name="schema4"></a>
+
+# 4. Estilos computados
 Para abrir la herramientas de desarrollo, pulsando `f12`
 ### Estilos por defecto.
 Cada explorador tienen sus propios estilos por defectos hay que tener en cuenta eso.
@@ -71,13 +100,22 @@ Se pueden normalizar los estilos.
 Descargamos el archivo y lo guardamos en la carpeta `css` y lo tenemos que cargar antes del archivo `styles.css` en el `index.html`
 https://necolas.github.io/normalize.css/
 
-# 5 Prefijos propietarios
+<hr>
+
+<a name="schema5"></a>
+
+# 5. Prefijos propietarios
 
 https://autoprefixer.github.io/
 
 Se puede instalar el programa `prepros`. Nos genera un archivo `styles-dist.css` que contiene todos los prefijos para que la página funcione en cualquier explorador, por eso cargamos el archivo `styles-dist.css` en nuestro `index.html`. 
 
-# 6 Box Model
+
+<hr>
+
+<a name="schema6"></a>
+
+# 6. Box Model
 ![img](001.png)
 ### Width y height
 ~~~html
@@ -225,7 +263,11 @@ border-radius: 10px / 50px;
  - border-bottom-left-radius: 10px 50px;
 
 
- # 5 Overflow
+<hr>
+
+<a name="schema7"></a>
+
+# 7. Overflow
 Es una propiedad que controla como se va a comportar la caja con el contenido que se desborde de ella.
 
 Es un shorthand que engloba overflow-x y overflow-y.
@@ -236,10 +278,14 @@ Tiene 4 valores posibles:
  - auto: Muestra la barra de scroll solo si hace falta
  - scroll: Muestra ambas barras de scroll independientemente de si se necesitan
 
- # 6. Colapsado de márgenes
- ### Márgenes verticales
- Los márgenes verticales colapsan y solapan.
- No tiene solución.
+<hr>
+
+<a name="schema8"></a>
+
+# 8. Colapsado de márgenes
+### Márgenes verticales
+Los márgenes verticales colapsan y solapan.
+No tiene solución.
 Pero se puede solucionar más o menos poniendo un ` margin-bottom:` al primer contenedor e ir bajando
  ~~~css
 .box-a,
@@ -273,7 +319,11 @@ Se puede solucionar.
 }
  ~~~
 
-# 7. Display
+<hr>
+
+<a name="schema9"></a>
+
+# 9. Display
 -Nos permite definir cómo se comporta una caja.
 -De forma natural existen elementos en línea y elementos en bloque
 -Los valores de esta propiedad son:
@@ -293,7 +343,13 @@ Se puede solucionar.
     display: inline; 
 }
     ~~~
-# 8. Outline
+
+
+<hr>
+
+<a name="schema10"></a>
+
+# 10. Outline
 Es ls propiedad que nos permite dibujar un borde por fuera del modelo de caja.
 
 No ocupa sitio ya que no forma parte del box-model.
@@ -323,7 +379,11 @@ No se pueden controlar los lados de forma independiente
 }
 ~~~
 
-# 9. Text-aling
+<hr>
+
+<a name="schema11"></a>
+
+# 11. Text-aling
 Es la propiedad que nos permite alinear horizontalmente el contenido de un elemento de bloque siempre que el contenido NO TENGA ANCHO DECLARADO
 ~~~html
 <div class="box">Border</div>
@@ -338,8 +398,11 @@ Es la propiedad que nos permite alinear horizontalmente el contenido de un eleme
     text-align: center;
 }
 ~~~
+<hr>
 
-# 10. Box shadow
+<a name="schema12"></a>
+
+# 12. Box shadow
 
 Es una propiedad que crea una una sombra del tamaño de la caja
 
